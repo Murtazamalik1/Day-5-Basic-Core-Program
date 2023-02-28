@@ -5,19 +5,16 @@ import java.util.Scanner;
 public class BasicCoreProgram {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int a, b;
-        System.out.println("Enter the number of a");
-        a = scanner.nextInt();
-        System.out.println("Enter the Number of b");
-        b = scanner.nextInt();
-        System.out.println("Before Swap :" + a + " " + b);
+        int num;
+        System.out.println("Enter any number To Check Whether Number Is Even Or odd");
+        num = scanner.nextInt();
 
-        int temp;
-        temp = a;
-        a = b;
-        b = temp;
-
-        System.out.println("After Swap :" + a +" " + b);
+        if (num % 2 == 0){
+            System.out.println("Number is Even :" + num);
+        }
+        else {
+            System.out.println("Number Is Odd :" + num);
+        }
 
     }
 
